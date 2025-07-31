@@ -7,7 +7,7 @@ from py_pdf_parser.loaders import load_file
 
 
 # open file - ensure it is in the same directory as the script
-document = load_file("206973054.pdf")
+document = load_file("")
 
 # file name
 file_name = 'hashes.txt'
