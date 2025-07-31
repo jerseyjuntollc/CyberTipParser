@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools >= 77.0.30"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["build*", "dist*"]
+
+[project]
+name = "cyber-tip-parser"
+version = "1.0.0"
+dependencies = [
+    "py_pdf_parser"
+]
+requires-python = ">=3.9"
+authors = [
+  {name = "John Luko"}
+]
+maintainers = [
+  {name = "John Luko"}
+]
+description = "Python 3 script for parsing CyberTip PDFs"
+readme = "README.md"
+keywords = ["cyber tip", "pdf"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/jerseyjuntollc/CyberTipParser"
+
+[project.scripts]
+ctp = "ctp.ctp:main"
